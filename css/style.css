@@ -529,6 +529,7 @@ button::-moz-focus-inner {
 	text-align:left;
 }
 .rb .logged  > div ul li a {
+	position:relative;
 	display:block;
 	color:#3e3e3f;
 	text-decoration:none;
@@ -537,13 +538,13 @@ button::-moz-focus-inner {
 	border-bottom:1px solid #dcdfe0;
 }
 .rb .logged  > div ul li a span {
-	position:relative;
-	float:right;
+	position:absolute;
+	right:12px;
+	top:4px;
 	color:#3e3e3f;
 	font-size:12px;
 	line-height:15px;
 	padding:2px 9px;
-	margin:-4px 0 -3px 6px;
 	border:1px solid #3e3e3f;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
@@ -1752,10 +1753,10 @@ div.ask .close {
 	width:100%;
 	height:100%;
 }
-.cb .contacts {
+.cb > div > .contacts {
 	margin:-5px 18px 35px;
 }
-.cb .contacts h1 {
+.cb > div > .contacts h1 {
 	color:#222222;
 	font-size:21px;
 	line-height:24px;
@@ -1765,30 +1766,30 @@ div.ask .close {
 	margin:0 0 12px;
 	border-bottom:3px solid #d8dbdd;
 }
-.cb .contacts h3 {
+.cb > div > .contacts h3 {
 	color:#626262;
 	font-size:16px;
 	line-height:19px;
 	padding:0;
 	margin:0 0 11px;
 }
-.cb .contacts > div {
+.cb > div > .contacts > div {
 	white-space:nowrap;
 }
-.cb .contacts > div > div {
+.cb > div > .contacts > div > div {
 	display:inline-block;
 	width:45%;
 	vertical-align:top;
 	white-space:normal;
 	margin:0 5% 0 0;
 }
-.cb .contacts p {
+.cb > div > .contacts p {
 	color:#222222;
 	font-size:13px;
 	line-height:32px;
 	margin:0;
 }
-.cb .contacts p a {
+.cb > div > .contacts p a {
 	color:#f0b606;
 }
 .cb .feedback {
@@ -2212,10 +2213,10 @@ div.ask .close {
 .cb .others h3 a:hover {
 	color:#f0b606;
 }
-.cb .news {
+.cb > div > .news {
 	margin:-5px 18px 18px;
 }
-.cb .news h1 {
+.cb > div > .news h1 {
 	color:#222222;
 	font-size:21px;
 	line-height:24px;
@@ -2225,23 +2226,23 @@ div.ask .close {
 	margin:0 0 17px;
 	border-bottom:3px solid #d8dbdd;
 }
-.cb .news > div > div {
+.cb > div > .news > div > div {
 	clear:both;
 	overflow:hidden;
 	padding:10px 0 9px;
 	border-bottom:1px solid #e3e3e3;
 }
-.cb .news > div > div img {
+.cb > div > .news > div > div img {
 	float:left;
 	margin:-17px 0 -18px -96px;
 }
-.cb .news > div > div.hasimage {
+.cb > div > .news > div > div.hasimage {
 	padding:23px 0 23px 96px;
 }
-.cb .news > div > div img {
+.cb > div > .news > div > div img {
 	float:left;
 }
-.cb .news h6 {
+.cb > div > .news h6 {
 	color:#65747b;
 	font-size:12px;
 	line-height:15px;
@@ -2251,7 +2252,7 @@ div.ask .close {
 	padding:0;
 	margin:0 0 4px;
 }
-.cb .news h3 {
+.cb > div > .news h3 {
 	overflow:hidden;
 	color:#222222;
 	font-size:15px;
@@ -2261,11 +2262,11 @@ div.ask .close {
 	padding:0;
 	margin:0 0 4px;
 }
-.cb .news h3 a {
+.cb > div > .news h3 a {
 	color:#222222;
 	text-decoration:none;
 }
-.cb .news h3 a:hover {
+.cb > div > .news h3 a:hover {
 	color:#f0b606;
 }
 .cb .news .pagination, .cb .partners .pagination {
@@ -2516,7 +2517,6 @@ div.ask .close {
 }
 .cb .balance table {
 	overflow:hidden;
-	table-layout:fixed;
 	width:100%;
 	margin:0 0 18px;
 	-webkit-border-radius:3px 3px 0 0;
